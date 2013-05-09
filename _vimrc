@@ -21,11 +21,17 @@ set showtabline=2
 
 set ignorecase
 set smartcase
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
-map <F2> :NERDTree C:\Data\gitrepos<CR>
+"map <F2> :NERDTree C:\Data\gitrepos<CR>
+map <F2> :NERDTreeTabsToggle<CR>
 
+" Turn on syntax highlighting
 syntax on
 
-" colors xoria256
+" Set backup (swap file) directory
+set dir=~/tmp
+
 colors railscasts
-" colors twilight
